@@ -1,0 +1,28 @@
+.hot-item {
+    padding: 0.18rem 0;
+    display: flex;
+    &>span {
+        width: 0.5rem;
+        font-size: 0.38rem;
+    }
+    p {
+        font-weight: 500;
+        flex: 1;
+        line-height: 0.44rem;
+        margin-bottom: 0.08rem;
+    }
+    div>span {
+        line-height: 0.36rem;
+        color: #999999;
+        font-size: 0.26rem;
+    }
+    .fc-1 {
+        color: #FF1E1E;
+    }
+    .fc-2 {
+        color: #FA6400;
+    }
+    .fc-3 {
+        color: #F7B500;
+    }
+}

@@ -1,0 +1,92 @@
+.post-item {
+    padding: 0.28rem 0.24rem;
+    box-shadow: 0 0 0.12rem 0 rgba(59,107,250,0.10);
+    border-radius: 0.16rem;
+    &>div:first-child {
+        display: flex;
+        align-items: center;
+        font-size: 0.28rem;
+        p:last-child {
+            color: #999999;
+        }
+        img {
+            width: 0.68rem;
+            height: 0.68rem;
+            border-radius: 50%;
+            margin-right: 0.16rem;
+        }
+    }
+    &__content {
+        p:first-child {
+            margin-top: 0.2rem;
+            font-weight: 500;
+            line-height: 0.44rem;
+        }
+        p:last-child {
+            margin-top: 0.1rem;
+            font-size: 0.3rem;
+            color: #666666;
+            line-height: 0.42rem;
+        }
+    }
+    &__comment {
+        position: relative;
+        background: #F3F6FF;
+        border-radius: 0.08rem;
+        padding: 0.24rem;
+        margin-top: 0.26rem;
+        &>span {
+            position: absolute;
+            top: -0.24rem;
+            border: 0.12rem solid #F3F4FF;
+            border-top-color: transparent;
+            border-left-color: transparent;
+            border-right-color: transparent;
+        }
+        span {
+            color: #999999;
+        }
+    }
+    &__footer {
+        margin-top: 0.2rem;
+        font-size: 0.28rem;
+        display: flex;
+        justify-content: space-between;
+        i {
+            font-size: 0.32rem;
+            margin-left: 0.26rem;
+        }
+        &>div:last-child {
+            display: flex;
+        }
+        span {
+            color: #737AA5;
+        }
+        div:last-child {
+            color: #999999;
+        }
+    }
+}
+
+
+.images {
+    display: flex;
+    flex-wrap: wrap;
+    // justify-content: space-between;
+    div {
+        margin-left: 0.12rem;
+        margin-top: 0.12rem;
+        &:nth-child(3n+1).other {
+            margin-left: 0;
+        }
+        &:nth-child(-n + 3).other {
+            margin-top: 0;
+        }
+        &:nth-child(2n+1).four {
+            margin-left: 0;
+        }
+        &:nth-child(-n + 2).four {
+            margin-top: 0;
+        }
+    }
+}

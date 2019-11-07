@@ -1,0 +1,28 @@
+.tab-item {
+    position: relative;
+    padding: 0 0.06rem;
+    color: #999999;
+    line-height: 0.54rem;
+    span {
+        display: none;
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 0.44rem;
+        height: 0.04rem;
+        background-image: linear-gradient(90deg, #6DA4FD 0%, #3B6BFA 100%);
+        border-radius: 2px;
+    }
+    &.active {
+        span {
+            display: block;
+        }
+        color: #333333;
+    }
+}
+
+.tab-container {
+    display: flex;
+    justify-content: space-between;
+} 

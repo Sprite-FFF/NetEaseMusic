@@ -1,0 +1,16 @@
+.edit {
+    &-title {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        height: 88px;
+        button {
+            padding: 0 32px;
+            line-height: 88px;
+            color: #333333;
+            &:last-child {
+                color: #3B6BFA;
+            }
+        }
+    }
+}
