@@ -1,6 +1,6 @@
 import React from 'react'
 import './index.scss'
-
+import Uploader from '../../components/edit/uplaoder'
 const Edit = () => {
     return (
         <div className="edit">
@@ -10,11 +10,11 @@ const Edit = () => {
             </div>
             <div className="edit-content">
                 <div>
-                    <input type="text"/>
+                    <input placeholder="请输入标题" type="text"/>
                 </div>
-                <textarea name="" id="" cols="30" rows="10"></textarea>
+                <textarea placeholder="请输入正文" name="" id="" cols="30" rows="10"></textarea>
             </div>
-            <div className="edit-upload"></div>
+            <Uploader className="edit-upload" />
             <div className="edit-topic"></div>
         </div>
     )

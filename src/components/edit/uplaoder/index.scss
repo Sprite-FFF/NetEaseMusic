@@ -1,0 +1,41 @@
+.uploader {
+    padding: 32px;
+    display: flex;
+    flex-wrap: wrap;
+    div, label {
+        width: 212px;
+        height: 212px;
+        margin-left: 25px;
+        margin-top: 25px;
+        &:nth-child(3n + 1) {
+            margin-left: 0;
+        }
+        &:nth-child(-n + 3) {
+            margin-top: 0;
+        }
+    }
+    .add {
+        display: block;
+        position: relative;
+        width: 212px;
+        height: 212px;
+        border: 1PX solid #F5F5F5;
+        input {
+            display: none;
+        }
+        &::before,
+        &::after {
+            content: '';
+            width: 4px;
+            height: 80px;
+            background-color: #F5F5F5;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        &::after {
+            transform: translate(-50%, -50%) rotateZ(90deg);
+        }
+    }
+}
