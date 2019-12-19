@@ -4,6 +4,7 @@ import Piazza from '../views/piazza'
 import Edit from '../views/edit'
 import Detail from '../views/detail'
 import Find from '../views/find'
+import Mine from '../views/mine'
 const routes = [
     {
         path: '/',
@@ -13,6 +14,10 @@ const routes = [
             {
                 path: '/find',
                 component: Find
+            },
+            {
+                path: '/mine',
+                component: Mine
             }
         ]
     },
