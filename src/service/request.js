@@ -5,15 +5,13 @@ const Fetch = (url, config = {}) => {
         ...config
     })
     .then(response => {
-        console.log(response)
-        const result = response.json
+        const result = response.json()
         if (response.ok) {
             return result
         }
         return Promise.reject(result)
     })
     .catch(error => {
-        console.log(error)
         const _error = {
             code: -10000,
             message: '网络异常'

@@ -18,7 +18,11 @@ button {
     border: none;
     outline: none;
 }
-
+ul,
+ol,
+li {
+    list-style: none;
+}
 .pt20 {
     padding-top: 0.2rem;
 }

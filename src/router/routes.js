@@ -7,17 +7,12 @@ import Find from '../views/find'
 const routes = [
     {
         path: '/',
-        exact: true,
+        // exact: true,
         component: Home,
         children: [
             {
                 path: '/find',
-                children: [
-                    {
-                        path: '/find',
-                        component: Find
-                    }
-                ]
+                component: Find
             }
         ]
     },
@@ -28,6 +23,14 @@ const routes = [
     {
         path: '/piazza',
         component: Piazza
+    },
+    {
+        path: '/piazza/detail',
+        component: Detail
+    },
+    {
+        path: '/piazza/edit',
+        component: Edit
     }
 ]
 

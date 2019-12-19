@@ -9,7 +9,14 @@ export const GetRoutes = (props) => {
         <Switch>
             {
                 routes.map(route => {
-                    return <Route exact={ route.exact } path={ route.path } key={ route.path } routes={ route.children } component={ route.component } />
+                    return <Route 
+                                exact={ route.exact }
+                                path={ route.path }
+                                key={ route.path }
+                                routes={ route.children }
+                                render={
+                                    props => <route.component { ...props } routes={ route.children } />
+                                } />
                 })
             }
         </Switch>
